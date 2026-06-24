@@ -175,11 +175,11 @@ pascal_sbd_dataset = dataset_base.copy({
 crater_dataset = dataset_base.copy({
     'name': 'MDCD Crater',
 
-    'train_images': '/root/lizihan/CraterDetectMoon/MDCD',
-    'valid_images': '/root/lizihan/CraterDetectMoon/MDCD',
+    'train_images': '/home/lizihan/CraterDetectMoon/MDCD',
+    'valid_images': '/home/lizihan/CraterDetectMoon/MDCD',
 
-    'train_info': '/root/lizihan/CraterDetectMoon/annotations/MDCD/train1.json',
-    'valid_info': '/root/lizihan/CraterDetectMoon/annotations/MDCD/val1.json',
+    'train_info': '/home/lizihan/CraterDetectMoon/annotations/MDCD/train1.json',
+    'valid_info': '/home/lizihan/CraterDetectMoon/annotations/MDCD/val1.json',
 
     'class_names': ('crater',),
     'label_map': {0: 1},
@@ -793,6 +793,16 @@ crater_yolact_resnet50_120epoch_config = crater_yolact_resnet50_config.copy({
 
     'max_iter': 5880,
     'lr_steps': (3920, 4900, 5500),
+})
+
+crater_yolact_resnet50_120epoch_320_config = crater_yolact_resnet50_120epoch_config.copy({
+    'name': 'crater_yolact_resnet50_120epoch_320',
+    'max_size': 320,
+})
+
+crater_yolact_resnet50_120epoch_256_config = crater_yolact_resnet50_120epoch_config.copy({
+    'name': 'crater_yolact_resnet50_120epoch_256',
+    'max_size': 256,
 })
 
 
