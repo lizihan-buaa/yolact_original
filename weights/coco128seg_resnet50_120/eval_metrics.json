@@ -1,0 +1,33 @@
+{
+  "dataset": "coco128seg",
+  "model": "original_yolact_resnet50",
+  "config": "coco128seg_yolact_resnet50_120epoch_config",
+  "weights": "/home/lizihan/yolact_original/weights/coco128seg_resnet50_120/coco128seg_yolact_resnet50_120epoch_119_1440.pth",
+  "method": "original eval.py, no threshold changes",
+  "box": {
+    "AP": 0.0228,
+    "AP50": 0.0486,
+    "AP55": 0.045,
+    "AP60": 0.0399,
+    "AP65": 0.0275,
+    "AP70": 0.0244,
+    "AP75": 0.0142,
+    "AP80": 0.0116,
+    "AP85": 0.0105,
+    "AP90": 0.0062,
+    "AP95": 0.0
+  },
+  "mask": {
+    "AP": 0.0134,
+    "AP50": 0.0348,
+    "AP55": 0.0277,
+    "AP60": 0.0231,
+    "AP65": 0.0229,
+    "AP70": 0.021,
+    "AP75": 0.0042,
+    "AP80": 0.0,
+    "AP85": 0.0,
+    "AP90": 0.0,
+    "AP95": 0.0
+  }
+}

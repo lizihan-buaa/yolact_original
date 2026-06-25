@@ -158,3 +158,24 @@ vid/
 vidres/
 
 _.py
+
+# Keep experiment metadata trackable while excluding large artifacts.
+!logs/
+!logs/**/
+logs/**
+!logs/**/
+!logs/**/*.log
+!logs/**/*.json
+
+!weights/
+!weights/**/
+weights/**
+!weights/**/
+!weights/**/*.log
+!weights/**/*.json
+weights/**/*.pth
+weights/**/*.pt
+weights/**/*.pkl
+weights/**/*.pickle
+weights/**/*.tar
+weights/**/*.zip
