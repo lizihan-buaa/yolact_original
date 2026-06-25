@@ -1,0 +1,33 @@
+{
+  "dataset": "MDCD",
+  "model": "original_yolact_resnet50",
+  "config": "crater_yolact_resnet50_120epoch_config",
+  "weights": "/home/lizihan/yolact_original/weights/crater_resnet50_120/crater_yolact_resnet50_120epoch_119_5880.pth",
+  "method": "original eval.py, no threshold changes",
+  "box": {
+    "AP": 0.3569,
+    "AP50": 0.8021,
+    "AP55": 0.7365,
+    "AP60": 0.6443,
+    "AP65": 0.5254,
+    "AP70": 0.3928,
+    "AP75": 0.2585,
+    "AP80": 0.1432,
+    "AP85": 0.0524,
+    "AP90": 0.0136,
+    "AP95": 0.0006
+  },
+  "mask": {
+    "AP": 0.2227,
+    "AP50": 0.531,
+    "AP55": 0.4554,
+    "AP60": 0.3858,
+    "AP65": 0.3087,
+    "AP70": 0.2363,
+    "AP75": 0.1654,
+    "AP80": 0.0963,
+    "AP85": 0.0418,
+    "AP90": 0.006,
+    "AP95": 0.0003
+  }
+}

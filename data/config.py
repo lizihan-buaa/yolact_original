@@ -146,6 +146,16 @@ coco2017_dataset = dataset_base.copy({
     'label_map': COCO_LABEL_MAP
 })
 
+
+coco128seg_dataset = dataset_base.copy({
+    'name': 'COCO128-seg',
+    'train_images': '/home/lizihan/datasets/coco128-seg/images/train2017',
+    'valid_images': '/home/lizihan/datasets/coco128-seg/images/train2017',
+    'train_info': '/home/lizihan/datasets/coco128-seg/annotations/instances_train_coco128seg.json',
+    'valid_info': '/home/lizihan/datasets/coco128-seg/annotations/instances_val_coco128seg.json',
+    'label_map': COCO_LABEL_MAP,
+})
+
 coco2017_testdev_dataset = dataset_base.copy({
     'name': 'COCO 2017 Test-Dev',
 
@@ -779,6 +789,15 @@ yolact_resnet50_config = yolact_base_config.copy({
         'preapply_sqrt': False,
         'use_square_anchors': True, # This is for backward compatability with a bug
     }),
+})
+
+
+coco128seg_yolact_resnet50_120epoch_config = yolact_resnet50_config.copy({
+    'name': 'coco128seg_yolact_resnet50_120epoch',
+    'dataset': coco128seg_dataset,
+    'num_classes': len(coco128seg_dataset.class_names) + 1,
+    'max_iter': 1440,
+    'lr_steps': (960, 1200, 1320),
 })
 
 crater_yolact_resnet50_config = yolact_resnet50_config.copy({
